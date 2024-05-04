@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+    
+}
+body{
+    background-color: skyblue;
+   
+   
+
+}
+.box{
+    border-top: 2px solid white;
+    display: flex;
+    width:100%;
+    height: 30px;
+    background-color: black;
+    color: white;
+    grid-gap:75rem;
+   
+}
+.box1{
+    display: flex;
+    grid-gap:16rem;
+    text-decoration: none;
+    color: blue;
+   
+}
+#navbar{
+    font-weight: 20px;
+    font-size: 30px;
+    color:blue;
+    text-decoration: none;
+   
+}
+ .items p{
+   display: inline;
+   color: blue;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+a{
+    color:blue;
+}
+a:hover{
+    color:black;
+}
+.kiki h1{
+    margin-top: 200px;
+    margin-left: 200px;
+   color:blue;
+   font-size:50px;
+}
+.kiki p{
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.box2{
+    margin:0px;
+    padding: 0px;
+    height:30px;
+    width:70px;
+    color: white;
+    text-decoration: none;
+}
+#btn1{
+    margin-left: 200px;
+    background-color: orange;
+    color:white;
+    font-size: larger;
+   
+    margin-top: 20px;
+    font-weight: bold;
+  
+    border-radius: 0.3rem;
+    text-decoration: none;
+    height:45px;
+    width:120px;
+
+
+}
+#btn1:hover{
+    color:white;
+    background-color:blue;
+    cursor:pointer;
+}
+#btn2{
+    margin-left: 200px;
+    background-color: orange;
+    color:white;
+    font-size: larger;
+   
+    margin-top: 20px;
+    font-weight: bold;
+  
+    border-radius: 0.3rem;
+    text-decoration: none;
+    height:45px;
+    width:160px;
+
+
+}
+#btn2:hover{
+    color:white;
+    background-color:blue;
+    cursor:pointer;
+}
+.box3 img{
+    width: auto;
+    height: 700px;
+    margin-left: 845px;
+    margin-top: -400px;
+    position: relative;
+    z-index: -1;
+}
+section{
+    background-color: white;
+    z-index:-2;
+}
+.box4{
+    
+    height:180px;
+    width:300px;
+    background-color: aliceblue;
+    margin-left:190px;
+    margin-top: -50px;
+    box-shadow: 10px 13px black;
+}
+.box4:hover{
+    background-color: orange;
+    cursor: pointer;
+} 
+.box4 img{
+   
+    margin: 35px 160px 38px 87px;
+    width: 69px;
+    height: 100px;
+   
+}
+.box4  p{
+    margin:-50px 160px 45px 97px;
+    
+   
+}
+.box5{
+    
+    height:180px;
+    width:300px;
+    background-color: aliceblue;
+    margin-left: 584px;
+    margin-top: -183px;
+    box-shadow: 10px 13px black;
+}
+.box5:hover{
+    background-color:orange;
+    cursor: pointer;
+}
+.box5 img{
+   
+    margin: 35px 160px 38px 87px;
+    width: 69px;
+    height: 100px;
+    
+}
+.box5 p{
+    margin:-50px 160px 45px 97px;
+   
+   
+}
+.box6{
+    
+    height:180px;
+    width:300px;
+    box-shadow: 10px 13px black;
+    background-color: aliceblue;
+    margin-left: 976px;
+    margin-top: -182px;
+   
+}
+.box6:hover{
+    background-color: orange;
+    cursor:pointer;
+} 
+.box6 img{
+   
+    margin: 35px 160px 38px 87px;
+    width: 69px;
+    height: 100px;
+}
+.box6 p{
+    margin:-50px 160px 45px 97px;
+    
+   
+}
+.chiki{
+     margin-left: 200px;
+    margin-top: 200px;
+}
+.chiki p{
+    margin-top:20px;
+}
+.box7 img{
+   
+    width: 536px;
+    height: 388px;
+    margin-left: 758px;
+    margin-top: -360px;
+}
+.box8 img{
+    width: 498px;
+    height:508px;
+    margin-left: 135px;
+    margin-top: 94px;
+}
+.niki{
+    margin-left: 629px;
+    margin-top: -395px;
+}
+.niki h1{
+    color:blue;
+
+
+}
+.niki p{
+    margin-top:20px;
+}
+#btn3{
+    margin-left: 625px;
+    background-color: orange;
+    color: white;
+    font-size: larger;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    height: 46px;
+    width: 155px;
+}
+#btn3:hover{
+    color:white;
+    background-color:blue;
+    cursor:pointer;
+}
+.line{
+    margin-top:200px;
+}
+div h1{
+justify-content: center;
+align-items: center;
+}
+
+
