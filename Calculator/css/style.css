@@ -1,0 +1,67 @@
+*{
+    background: linear-gradient(rgb(247, 103, 223),pink,rgb(251, 177, 251),rgb(244, 89, 177));
+    height:100vh;
+    width:100vw;
+    background-size: cover;
+    overflow: hidden;
+}
+.parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:2px solid red;
+    height:100vh;
+   
+}
+.box{
+    border:5px solid rgb(216, 19, 183);
+    width:30%;
+    height:80%;
+    background: linear-gradient(rgb(251, 129, 251),rgb(156, 197, 247),rgb(248, 158, 158), rgb(247, 200, 200),rgb(241, 51, 168),rgb(155, 198, 250),rgb(251, 129, 251));
+}
+.box1{
+   border:5px solid rgb(225, 5, 203);
+   border-radius:20px;
+    height:80px;
+   width:420px;
+   margin:20px;
+   background: transparent;
+  
+}
+.box2{
+    
+   width:420px;
+    background: transparent;
+    margin: 20px;
+    height:430px;
+}
+.grid-container{
+    box-shadow: 10px 10px 20px black;
+    
+    display:grid;
+    width:420px;
+    height:430px;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap:10px;
+    background: transparent;
+}
+.grid-item{
+
+    box-shadow: 10px 10px 20px solid black;
+   
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    margin:20px;
+    border: 2px solid rgb(236, 10, 146); 
+width:60%;
+height:60%;
+font-size: 2rem;
+/* background: transparent; */
+}
+.grid-item:active{
+    background: transparent;
+    cursor:pointer;
+}
