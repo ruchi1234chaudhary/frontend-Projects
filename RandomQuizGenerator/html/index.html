@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomQuizGenerator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="relative">
+
+        <img class="absolute opacity-90 h-screen z-0" src="/img/quiz generator img.png">
+        <img  class=" absolute opacity-90 t-0 l-0 h-screen w-full z-10" src="/img/blackpep.jpg">
+        <div class="flex h-screen items-center justify-center">
+        <div class=" absolute   w-1/3 h-screen   t-0 l-0  z-20 ">
+            <h1 class="text-6xl opacity-90  text-center font-bold "  style=" text-shadow: 2px 2px 5px rgba(235, 125, 125, 0.5);">Simple Quiz</h1>
+            <p  id="question" class="h-24 w-full mt-15 border-2  text-white  text-3xl rounded-xl font-bold pt-2" style=" text-shadow: 2px 2px 5px rgb(29, 26, 26);">Question will be displayed here</p>
+            <p id="options">
+            <button class="btn text-left text-white  w-full p-2 text-xl font-bold  mt-10  rounded-xl hover:bg-red-500 hover: border-2 border-white-600" style="text-shadow: 2px 2px 5px rgb(234, 35, 35); ">option1</button>
+            <button class="btn text-left text-white border-2  w-full p-2  text-xl font-bold rounded-xl mt-10 hover:bg-red-500 hover: border-2 border-white-600" style="text-shadow: 2px 2px 5px rgb(170, 114, 244);">Option 1</button>
+            <button class="btn text-left  text-white border-2  w-full p-2  text-xl font-bold rounded-xl  mt-10 hover:bg-red-500 hover: border-2 border-white-600" style="text-shadow: 2px 2px 5px rgb(76, 233, 134);">Option 1</button>
+            <button class="btn text-left  text-white border-2  w-full p-2 text-xl font-bold  rounded-xl mt-10 hover:bg-red-500 hover: border-2 border-white-600" style="text-shadow: 2px 2px 5px rgb(244, 215, 30);">Option 1</button></p>
+            <p class="btn text-center justify-center align-center mt-10">
+            <button  id="next-btn" class="text-center none text-3xl font-bold justify-center align-center border-2 pl-7 pr-7 pt-3 pb-3 bg-white rounded-xl hover:bg-transparent hover:text-4xl hover:text-white" style=" text-shadow: 2px 2px 5px rgba(235, 125, 125, 0.5);">Next</button></p>
+        </div>
+    </div>
+</div>
+   <script src="/js/script.js"></script>
+</body>
+</html>
