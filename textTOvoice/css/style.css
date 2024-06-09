@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding:0;
+    background-size: cover;
+    position:relative;
+}
+
+
+
+main img{
+    height:99vh;
+    width:100%;
+    background-size: cover;
+    background-position: center;
+    position:absolute;
+}
+.box{
+    box-shadow:5px 5px 10px 0 rgb(85, 85, 85); ;
+    position:absolute;
+/* border:2px solid red; */
+height:60vh;
+width:70%;
+background: linear-gradient(white,pink,rgb(238, 238, 193),rgb(238, 173, 173),rgb(189, 242, 189));
+margin-left:220px;
+margin-top:130px;
+justify-content: center;
+text-align: center;
+align-items: center;
+transition: transform 0.3s ease; 
+}
+.box:hover{
+    transform:translate(2px,2px);
+}
+.text-box{
+    font-size:80px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px green;
+
+}
+
+.text-box:hover{
+    transform:translate(2px,2px);
+}
+#text{
+    font-size: larger;
+    padding-bottom:180px;
+    box-sizing: border-box;
+    width:40vw;
+    height:30vh;
+    background: transparent;
+    border:none;
+    box-shadow: 5px 5px 10px 0 rgb(85, 85, 85);
+    margin-top:30px;
+}
+#text:hover{
+    transform:translate(2px,2px);
+}
+#buttons{
+    margin-left:230px;
+    width:40vw;
+   
+    margin-top:30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+  .btn1{
+    text-shadow: 2px 2px 5px green;
+    font-weight: bolder;
+    color:blue;
+    box-shadow:5px 5px 10px 0 rgb(85, 85, 85); 
+    font-size:30px;
+    width:380px;
+    /* border:2px solid red; */
+    text-align: center;
+    padding:0px;
+    border-radius:20px;
+    margin-right:160px;
+    transition: transform 0.3s ease; 
+    border:none;
+}
+.btn2{
+    border:none;
+    background: transparent;
+    text-shadow: 2px 2px 5px green;
+    font-weight: bolder;
+    color:rgb(234, 26, 151);
+    box-shadow:5px 5px 10px 0 rgb(85, 85, 85); 
+    font-size:30px;
+    /* border:2px solid red; */
+    /* padding:10px; */
+    margin-right:20px;
+    border-radius:20px;
+    width:220px;
+}
+.btn1:hover{
+  
+   transform:translate(2px,2px);
+   cursor:pointer;
+  
+}
+.btn2:hover{
+  
+    transform:translate(2px,2px);
+    cursor:pointer;
+   
+ }
