@@ -1,0 +1,79 @@
+body{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size:cover;
+    background: url(chandani\ rat.jpg);
+
+}
+.container{
+    
+    width:100vw;
+    height:96vh;
+    position:relative;
+    background-size:cover;
+}
+#box1{
+    position:absolute;
+    left:30px;
+    bottom:330px;
+display:flex;
+    border:2px solid rgb(237, 35, 35);
+    height:60px;
+    width:60px;
+    border-radius: 50px;
+    background:linear-gradient(white,rgb(247, 155, 170))
+}
+.box{
+    border:1px solid rgb(21, 18, 18);
+    background-color: rgb(19, 18, 18);
+    height:5px;
+    width:5px;
+    margin-left:17px;
+    margin-top: 10px;
+    border-radius: 50px;
+
+    
+}
+.mouth{
+    background-color: red;
+    border:2px solid black;
+    height:10px;
+    width:20px;
+    margin-top: 30px;
+   margin-left:20px;
+    position:absolute;
+    border-radius:0 0 50px 50px;
+
+}
+.pet{
+    border:2px solid red;
+    height:60px;
+    width:90px;
+    position: absolute;
+    border-radius:47px 20px 50px 50px;
+    top:60px; 
+    right:5px;  
+    background:linear-gradient(white,pink);
+}
+.hand{
+    height:15px;
+    width:50px;
+    position: absolute;
+    border-radius:20px;
+    top:70px;
+    left:20px;
+    background:linear-gradient(white,pink);
+}
+#box2{
+    height:30px;
+    width:160px;
+    background: white;
+  left:0;
+  top:430px;
+    background:linear-gradient(white,rgb(247, 155, 170));
+   position:absolute;
+  bottom:0;
+}
