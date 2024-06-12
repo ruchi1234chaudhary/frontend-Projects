@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog-Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <nav class="bg-slate-50  w-full flex justify-between p-4 absolute z-10 opacity-30" >
+<div class="logo flex font-bold text-2xl opacity-80" style="opacity:0.9"><img class="h-10 mr-2" src="clock.png">Analog-Clock</div>
+<ul class="flex gap-10 ">
+    <li class="text-xl hover:font-bold hover:cursor-pointer">Home</li>
+    <li class="text-xl hover:font-bold hover:cursor-pointer">About</li>
+    <li class="text-xl hover:font-bold hover:cursor-pointer">Contact Us</li>
+</ul></nav>
+<main class="relative bg-no-repeat justify-center align-center text-center"><img  class= "h-screen w-full m-0 p-0 absolute z-0" src= "Analog-clock-img.avif">
+   
+    <img  class="h-screen w-full m-0 p-0 absolute z-0 opacity-80 "  src= "black-bg.png">
+    
+    <img  class="clock" src ="clock-removebg-preview.png">
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+       
+    </div>
+
+</main>
+
+<footer class=" justify-center text-center align-center  bg-slate-50 bottom-0 w-full flex  p-4 absolute z-9 " style="opacity:0.3;">for more info || contact me:- cruchi971@gmail.com</footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
