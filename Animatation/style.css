@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+/* container{
+    height:80vh;
+    width:100%;
+    background: url('bg-img.jpg') repeat-x;
+    animation: carMove 6s linear infinite;
+} */
+
+.container img {
+    height: 80vh;
+    width: 100%;
+}
+
+.container1 {
+    height: 40vh;
+    width: 100%;
+    margin-top: 490px;
+    background: url('road.road.png') repeat-x;
+    animation: carMove 6s linear infinite;
+}
+
+.car img {
+    width: 400px;
+    margin-top: 300px;
+}
+
+.chake1 img {
+    transition: transform 0.5s ease;
+    animation: wheelRotation 0.3s infinite;
+    position: absolute;
+    width: 230px;
+    margin-top: 440px;
+    margin-left: -16px;
+}
+
+#rotate1 {
+    transition: transform 0.5s ease;
+    animation: wheelRotation 0.3s infinite;
+    position: absolute;
+    margin-top: -280px;
+    z-index: 10;
+    width: 230px;
+    margin-left: 180px;
+}
+
+@keyframes wheelRotation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes carMove {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 100%;
+    }
+}
+
