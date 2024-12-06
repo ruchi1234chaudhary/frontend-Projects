@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    height:100%;
+    width:100%;
+}
+
+
+#main{
+   
+    height:100%;
+    width:100%;
+    background-color: rgb(176, 174, 174);
+}
+
+#center{
+    /* overflow: hidden; */
+    position: absolute;
+    left:20%;
+    top:50%;
+    transform: translate(0%,-50%);
+    width:70%;
+    height:80%;
+    /* background-color: rgb(213, 19, 19); */
+}
+
+.imagecontainer{
+    overflow: hidden;
+    height:100%;
+    width:0%;
+    position:absolute;
+   
+}
+ img{
+   
+    height:100%;
+    
+} 
+
+/* #one{
+    width:0%;
+   
+} */
+.text{
+overflow: hidden;
+    position: absolute;
+    bottom:15%;
+    left:-10%;
+    width:400px;
+    height:100px;
+    overflow: hidden;
+    z-index:999;
+    color:white;
+    
+}
+
+.text h1{
+    font-size: 6vw;
+    position:absolute;
+    top:1000px;
+}
