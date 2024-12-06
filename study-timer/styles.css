@@ -1,0 +1,160 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+   
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-size: cover; /* Scale the image to cover the entire area */
+    background-position: center; /* Center the image */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://plus.unsplash.com/premium_photo-1732736766561-489c030d200b?q=80&w=1975&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Large enough to create ripples */
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 10%, transparent 80%);
+    background-size: 20% 20%; /* Ripple size */
+    animation: ripple 8s infinite;
+    pointer-events: none; /* Ensures it doesn't interfere with clicks */
+    z-index: 1;
+  }
+  @keyframes ripple {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+  }
+  
+  /* Overlay for a subtle effect */
+  body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Optional dark overlay */
+    z-index: -1;
+  }
+  
+  
+
+  
+  .timer-container {
+    text-align: center;
+   background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  .timer-container h1{
+   font-size: 60px;
+   /* margin-bottom:350px; */
+
+
+    font-size: 5rem;
+    font-weight: bold;
+    color: #3498db; /* Front color */
+    position: relative;
+    transform: rotateX(0deg) rotateZ(0deg);
+    text-transform: uppercase;
+    text-shadow: 
+      1px 1px 0px #2c3e50,
+      2px 2px 0px #2c3e50,
+      3px 3px 0px #2c3e50,
+      4px 4px 0px #2c3e50;
+  
+  /* Adding the 3D depth effect */
+  
+
+
+
+   color:white;
+  
+  }
+
+  .timer-container h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    color: #2c3e50; /* Depth shadow color */
+    z-index: -1;
+    transform: translate(-2px, -2px);
+  }
+
+  
+  #timer {
+    font-size: 248px;
+  
+    color: #e5e9eb;
+
+
+  
+  }
+
+
+   
+  
+ 
+
+  .buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #start {
+    background: #28a745;
+    color: white;
+  }
+  
+  #start:hover {
+    background: #218838;
+  }
+  
+  #pause {
+    background: #ffc107;
+    color: black;
+  }
+  
+  #pause:hover {
+    background: #e0a800;
+  }
+  
+  #reset {
+    background: #dc3545;
+    color: white;
+  }
+  
+  #reset:hover {
+    background: #c82333;
+  }
+  
