@@ -3,54 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A mole game</title>
+    <title>Calender</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Himmat hai to pakkar ke dikhao <span class="score">0</span></h1>
-    <div class="levels">
-        <div>
-            <input type="radio" name="level" id="easy" checked>
-            <label for="easy">Easy</label>
+    <div class="wrapper">
+        <header>
+            <p class="current-date"></p>
+            <div class="icons">
+                <button id="prev" class="btn">Left</button>
+                <button  id="next" class="btn">Right</button>
+            </div>
+        </header>
 
-        </div>
-        <div>
-            <input type="radio" name="level" id="Medium">
-            <label for="Medium">Medium</label>
-            
-        </div>
-        <div>
-            <input type="radio" name="level" id="Hard">
-            <label for="Hard">Hard</label>
-            
-        </div>
-    </div>
+        <div class="calender">
+            <ul class="weeks">
+                <li>Sun</li>
+                <li>Mon</li>
+                <li>Tue</li>
+                <li>Wed</li>
+                <li>Thu</li>
+                <li>Fri</li>
+                <li>Sat</li>
+            </ul>
 
-
-    <div class="controls">
-        <button class="start-btn" onclick="startGame()">Start!</button>
-    </div>
-
-    <div class="game">
-        <div class="hole hole1">
-            <div class="mole"></div>
-        </div>
-        <div class="hole hole2">
-            <div class="mole"></div>
-        </div>
-        <div class="hole hole3">
-            <div class="mole"></div>
-        </div>
-        <div class="hole hole4">
-            <div class="mole"></div>
-        </div>
-        <div class="hole hole5">
-            <div class="mole"></div>
-        </div>
-        <div class="hole hole6">
-            <div class="mole"></div>
+            <ul class="days">
+        
+            </ul>
         </div>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>

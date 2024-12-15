@@ -1,97 +1,47 @@
-console.log("Radhe-Radhe")
-// Selecting all the elements from the DOM
-const holes = document.querySelectorAll(".hole");
-const scoreBoard = document.querySelector(".score");
-const moles = document.querySelectorAll(".mole");
-const startBtn = document.querySelector(".start-btn");
-const levels = document.querySelector(".levels");
-const game = document.querySelector(".game");
-
-let lastHole;
-let timeUp = false;
-let score = 0;
-
-// Function to get the selected radio button value
-function difficultyLevel() {
-  const ele = document.getElementsByName("level");
-  for (let i = 0; i < ele.length; i++) {
-    if (ele[i].checked) {
-      return ele[i].id;
+const daysTag = document.querySelector(".days"),
+currentDate = document.querySelector(".current-date"),
+prevNextIcon = document.querySelectorAll(".icons .btn");
+// getting new date, current year and month
+let date = new Date(),
+currYear = date.getFullYear(),
+currMonth = date.getMonth();
+// storing full name of all months in array
+const months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+const renderCalendar = () => {
+    let firstDayofMonth = new Date(currYear, currMonth, 1).getDay(), // getting first day of month
+    lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate(), // getting last date of month
+    lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay(), // getting last day of month
+    lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate(); // getting last date of previous month
+    let liTag = "";
+    for (let i = firstDayofMonth; i > 0; i--) { // creating li of previous month last days
+        liTag += `<li class="inactive">${lastDateofLastMonth - i + 1}</li>`;
     }
-  }
-}
-
-// Function to get a random time between min and max
-function randomTime(min, max) {
-  return Math.round(Math.random() * (max - min) + min);
-}
-
-// Function to get a random hole
-function randomHole(holes) {
-  const idx = Math.floor(Math.random() * holes.length);
-  const hole = holes[idx];
-  if (hole === lastHole) {
-    return randomHole(holes);
-  }
-  lastHole = hole;
-  return hole;
-}
-
-// Function to make the mole appear and disappear
-function peep(show, hide) {
-  const time = randomTime(show, hide);
-  const hole = randomHole(holes);
-  hole.classList.add("up");
-  setTimeout(() => {
-    hole.classList.remove("up");
-    if (!timeUp) {
-      peep(show, hide);
+    for (let i = 1; i <= lastDateofMonth; i++) { // creating li of all days of current month
+        // adding active class to li if the current day, month, and year matched
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() 
+                     && currYear === new Date().getFullYear() ? "active" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
     }
-  }, time);
+    for (let i = lastDayofMonth; i < 6; i++) { // creating li of next month first days
+        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
+    }
+    currentDate.innerText = `${months[currMonth]} ${currYear}`; // passing current mon and yr as currentDate text
+    daysTag.innerHTML = liTag;
 }
-
-// Function to start the game
-function startGame() {
-  let show, hide;
-  const difficulty = difficultyLevel();
-  if (difficulty === "easy") {
-    show = 500;
-    hide = 1500;
-  } else if (difficulty === "medium") {
-    show = 200;
-    hide = 1000;
-  } else {
-    show = 100;
-    hide = 800;
-  }
-
-  // hiding start button during game running
-  scoreBoard.textContent = 0;
-  timeUp = false;
-  startBtn.innerHTML = "running..";
-  startBtn.disabled = true;
-  levels.style.visibility = "hidden";
-  score = 0;
-
-  // Starting button after the game finish
-  peep(show, hide);
-  setTimeout(() => {
-    timeUp = true;
-    startBtn.innerHTML = "start!";
-    startBtn.disabled = false;
-    levels.style.visibility = "visible";
-  }, 15000);
-}
-
-// Function to update the score on clicking the mole
-function hitTheMole(e) {
-  if (!e.isTrusted) {
-    return;
-  }
-  score++;
-  this.parentNode.classList.remove("up");
-  scoreBoard.textContent = score;
-}
-
-// Adding the click event listener to all the moles
-moles.forEach((mole) => mole.addEventListener("click", hitTheMole));
+renderCalendar();
+prevNextIcon.forEach(icon => { // getting prev and next icons
+    icon.addEventListener("click", () => { // adding click event on both icons
+        // if clicked icon is previous icon then decrement current month by 1 else increment it by 1
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+        if(currMonth < 0 || currMonth > 11) { // if current month is less than 0 or greater than 11
+            // creating a new date of current year & month and pass it as date value
+            date = new Date(currYear, currMonth, new Date().getDate());
+            currYear = date.getFullYear(); // updating current year with new date year
+            currMonth = date.getMonth(); // updating current month with new date month
+        } else {
+            date = new Date(); // pass the current date as date value
+        }
+        renderCalendar(); // calling renderCalendar function
+    });
+});
