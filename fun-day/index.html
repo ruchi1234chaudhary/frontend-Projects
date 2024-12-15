@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake-Up Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <button id="oopsButton">Oops! Click Me!</button>
+    </div>
+
+    <!-- Popup message -->
+    <div id="messagePopup" class="message-popup">
+        <div class="popup-content">
+            <span id="messageText">Oops! You've broken the internet!</span>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
+
+    <!-- Sound selector and customization options -->
+    <div class="customization">
+        <label for="soundSelect">Choose your favorite sound:</label>
+        <select id="soundSelect">
+            <option value="cartoon.mp3">Cartoon "Oops!"</option>
+            <option value="glassbreaking.mp3">Glass Breaking</option>
+            <option value="funnyVoice.mp3">Funny Voice: "What are you doing?"</option>
+        </select>
+
+        <label for="messageInput">Enter your own message:</label>
+        <input type="text" id="messageInput" style="color:rgb(14, 13, 13);" placeholder="Type a funny message" />
+
+        <label for="themeSelect">Choose a theme:</label>
+        <select id="themeSelect">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="rainbow">Rainbow Theme</option>
+        </select>
+
+        <label for="animationToggle">Enable Animation:</label>
+        <input type="checkbox" id="animationToggle" checked />
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

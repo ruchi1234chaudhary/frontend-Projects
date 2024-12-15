@@ -1,0 +1,101 @@
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Light Theme */
+.light {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Dark Theme */
+.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Rainbow Theme */
+.rainbow {
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #66ccff, #ff66cc);
+    color: #fff;
+    animation: rainbow 3s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+    0% {background: #ff0066;}
+    25% {background: #ffcc00;}
+    50% {background: #66ccff;}
+    75% {background: #ff66cc;}
+    100% {background: #ff0066;}
+}
+
+/* Button styling */
+#oopsButton {
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff6347;
+    color: white;
+    transition: transform 0.3s;
+}
+
+#oopsButton:active {
+    transform: scale(0.9);
+}
+
+/* Message popup styling */
+.message-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+#closePopup {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Customization section */
+.customization {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customization input, .customization select {
+    padding: 10px;
+    width: 80%;
+    margin: 5px auto;
+    font-size: 1em;
+}
+
+#animationToggle {
+    margin-top: 10px;
+}
